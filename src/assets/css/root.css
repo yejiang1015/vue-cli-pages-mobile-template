@@ -1,0 +1,90 @@
+:root {
+    --theme1: #f4ae6b;
+    --theme2: #d8cbb8;
+    --theme3: #fff9eb;
+    --theme4: #fff2cf;
+    --theme5: #afafaf;
+    /* 灰色 */
+    --red: red;
+    --black: #000;
+    --white: white;
+    --theme11: #ff6100;
+    /* 深色 */
+    --b_header: #f5b25a;
+    --b_nav: #383a3f;
+    --b_item: #fff5e9;
+    --placeholder: #e2e2e2;
+}
+
+.placeholder::-webkit-input-placeholder {
+    color: var(--placeholder);
+}
+
+.placeholder:-moz-placeholder {
+    color: var(--placeholder);
+}
+
+.placeholder::-moz-placeholder {
+    color: var(--placeholder);
+}
+
+.placeholder:-ms-input-placeholder {
+    color: var(--placeholder);
+}
+
+.copy-txt {
+    position: absolute;
+    bottom: -10px;
+    left: -80%;
+    width: 100px;
+    color: #3da72d;
+    font-size: 12px;
+    animation: copyMove 1s;
+}
+
+@keyframes copyMove {
+    0% {
+        bottom: 0px;
+        opacity: 0;
+    }
+    25% {
+        opacity: .6;
+    }
+    50% {
+        bottom: -20px;
+        opacity: 1;
+    }
+    100% {
+        bottom: -20px;
+        opacity: 0;
+    }
+}
+
+/* element */
+
+.el-message {
+    min-width: 168px !important;
+    height: 36px !important;
+}
+
+/* select 下拉框 */
+
+.el-select {
+    width: 100%;
+}
+
+/* popover 弹出框 303133 */
+
+.el-popover {
+    padding: 8px !important;
+    background: transparent !important;
+    color: green !important;
+    text-align: center !important;
+    box-shadow: none !important;
+    border: 0 none !important;
+}
+
+.popper__arrow {
+    display: none !important;
+    border-bottom-color: transparent !important;
+}

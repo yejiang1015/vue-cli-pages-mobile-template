@@ -1,0 +1,15 @@
+<script>
+    (function (a, b) {
+        // 页面自适应脚本
+        var c = a.documentElement;
+        var d = "orientationchange" in b ? "orientationchange" : "resize";
+        var e = window.recalc = function () {
+            var a = c.clientWidth;
+            var limit = 75;
+            var namic = Math.floor(100 * (a / 750));
+            var t = namic > limit ? limit : namic;
+            a && (c.style.fontSize = t + "px")
+        };
+        a.addEventListener && (b.addEventListener(d, e, !1), a.addEventListener("DOMContentLoaded", e, !1));
+    })(document, window);
+</script>
