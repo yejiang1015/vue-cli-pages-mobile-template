@@ -32,3 +32,15 @@
 
 http://localhost:3000/pages/page.html#/component-router
 http://localhost:3000/index.html#/home
+
+### git 操作
+
+打 tags
+
+```js
+// https://blog.csdn.net/albertsh/article/details/63253614
+git tag v0.1.0 -m "release 0.1.0 version"
+
+git push origin v0.1.0
+git push origin -–tags
+```
